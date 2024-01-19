@@ -1,0 +1,131 @@
+@import "open-props.min.css";
+
+body {
+    min-width: 44ch;
+    --gap: var(--size-2);
+    background-color: var(--yellow-4);
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-5);
+    padding: var(--size-2);
+}
+
+h1 {
+    font-size: var(--font-size-6);
+    font-weight: var(--font-weight-8);
+    margin: 0;
+    line-height: 1;
+}
+
+a {
+    color: var(--cyan-10);
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+.icon {
+    vertical-align: sub;
+    height: 3rem;
+}
+
+.links {
+    display: flex;
+    gap: var(--gap);
+    margin: var(--size-2) 0;
+    align-items: center;
+}
+
+.links img {
+    height: var(--size-7);
+}
+
+.links a {
+    height: min-content;
+    border-radius: 50%;
+}
+
+#refresh {
+    background: transparent;
+    border: none;
+    margin: unset;
+    padding: unset;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: auto;
+    display: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style-type: none;  
+    padding: var(--size-2);
+}
+
+li:hover,
+li:focus-within,
+a:focus  {
+    outline: var(--size-1) solid black;
+}
+
+generic-switch {
+    justify-content: space-between;
+}
+
+generic-switch::part(label) {
+    width: 100%;
+}
+
+generic-switch::part(button) {
+    border: var(--size-1) solid black;
+}
+
+generic-switch::part(thumb) {
+    background-color: black;
+}
+
+generic-switch::part(track) {
+    background-color: transparent;
+}
+
+generic-switch[checked]::part(track) {
+    background-color: var(--cyan-8);
+}
+
+#donate {
+    background: transparent;
+    border: var(--size-1) solid black;
+    border-radius: 0;   
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-6);
+    padding: var(--size-2) var(--size-4);
+}
+
+button:hover, 
+.links a:hover, 
+button:focus-visible, 
+.links a:focus-visible {
+    box-shadow: var(--size-1) var(--size-1) var(--cyan-8);
+    translate: calc(-1 * var(--size-1)) calc(-1 * var(--size-1));
+    outline: none;
+}
+
+button:active, .links a:active {
+    box-shadow: initial;
+    translate: initial;
+}
+
+ul {
+    margin-top: var(--size-2);
+}
+
+
+
+
+
+
