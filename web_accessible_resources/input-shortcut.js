@@ -143,7 +143,7 @@ class InputShortcut extends HTMLElement {
 			return;
 		}
 		
-		const allowed = ['-','=','.','/','Home','End'];
+		const allowed = ['-','=','/','Home','End'];
 		if (!(allowed.some((key) => key === e.key) || e.key.match(/\w/) && e.key.length === 1))
 			return;
 		

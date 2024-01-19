@@ -14,7 +14,7 @@ async function initializeState() {
 
         const element = document.createElement('generic-switch');
         element.innerHTML = tweak;
-        await chrome.storage.sync.get([tweak])
+        await chrome.storage.sync.get({[tweak]: true })
                                  .then((result) => element.checked = Object.values(result)[0]);
         element.addEventListener('checked-changed', (e) => {
             chrome.storage.sync.set({[e.target.innerHTML]: e.detail});  

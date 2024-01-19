@@ -192,6 +192,9 @@
         if (e.target.matches('textarea'))
             return;
 
+        if (e.target.matches('input') && (e.key === 'Home' || e.key === 'End' || e.key === '-'))
+            return;
+
         //remove focus from inputs, wait for change, refocus
 
         //non-navigation shortcuts
