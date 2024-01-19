@@ -21,7 +21,7 @@ a {
     text-decoration: none;
 }
 
-a:hover, a:focus {
+a:hover:not(#donate) {
     text-decoration: underline;
 }
 
@@ -98,12 +98,17 @@ generic-switch[checked]::part(track) {
 }
 
 #donate {
-    background: transparent;
+    background: var(--yellow-4);
     border: var(--size-1) solid black;
-    border-radius: 0;   
+    border-radius: 0;      
+    padding: var(--size-1) var(--size-4) var(--size-1) var(--size-2);
+    color: black;
     font-size: var(--font-size-2);
     font-weight: var(--font-weight-6);
-    padding: var(--size-2) var(--size-4);
+
+    img {
+        vertical-align: middle;
+    }
 }
 
 button:hover, 
