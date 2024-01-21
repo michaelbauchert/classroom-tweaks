@@ -12,11 +12,17 @@ When switching between classes, this tweak keeps you on the currently selected t
 ### Expandable Topics
 In the **Classwork** tab, this tweak hides the contents of each topic by default. Click the empty space of any topic to view the contents within. You can still navigate to each topic's page by clicking the text of the topic. This tweak makes rearranging and organizing your topics much easier, as you can click and drag each topic as well as expand relevant topics to move contents between them.
 
+![Expandable Topics Screenshot](/screenshots/Expandable%20Topics.jpeg)
+
 ### Skip to Grading Page Links
 In the **Grades** tab, this tweaks adds buttons, labeled **Grade**, for each assignment. These buttons act as direct links to the grading page.
 
+![Skip to Grading Page Links](/screenshots/Skip%20to%20Grading%20Page%20Links.jpeg)
+
 ### Grading Page Keyboard Shortcuts
 This tweak adds keyboard shortcuts to Google Classroom's grading page. You can change any of keys that trigger each shortcut to any **alphanumeric character** as well as **-**, **=**, **/**, **Home**, or **End**.
+
+![Grading Page Keyboard Shortcuts](/screenshots/Grading%20Page%20Keyboard%20Shortcuts.jpeg)
 
 #### Shortcuts
 | Default Key | Action | Description |
